@@ -1,9 +1,6 @@
 #include"Database.h"
 #include<fstream>
 
-//tesing
-#include<iostream>
-
 #define CERTIFICA "COT_certifica.txt"
 #define EMERGENCY_TIME "COT_emer.txt"
 #define COT_INDEX "COT_index.txt"
@@ -71,8 +68,6 @@ void Database::LoadData()
         this->m_HaveEmr=true;
     }
     ifs.close();
-
-    cout<<"done loaddata"<<endl;
     
 }
 
@@ -105,7 +100,6 @@ void Database::CreateCert()
     ofs.open(COT_INDEX,ios::out|ios::trunc);
     ofs<<this->m_Index*3+7<<endl;
 
-    cout<<"Done creatapwd"<<endl;
 }
 
 int Database::GiveEmrTime()
