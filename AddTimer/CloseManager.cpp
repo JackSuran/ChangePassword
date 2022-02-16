@@ -102,7 +102,7 @@ void CloseManager::CloseSys()
         string pwd;
         cin>>pwd;
 
-        if(pwd=="hjhhjt")
+        if(pwd=="abc123")
         {
             system("cls");
             cout<<"1.reset the Emr_time\n"
